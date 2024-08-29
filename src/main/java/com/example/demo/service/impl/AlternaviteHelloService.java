@@ -10,10 +10,8 @@ public class AlternaviteHelloService implements HelloService {
     public UpperRestweb uppercase(UpperRestweb input) {
         String reversedFirstName = new StringBuilder(input.getFirstName().toUpperCase()).reverse().toString();
         String reversedLastName = new StringBuilder(input.getLastName().toUpperCase()).reverse().toString();
-        //int reversedAge = new StringBuilder(input.getAge().toUpperCase()).reverse().toString();
         input.setFirstName(reversedFirstName);
         input.setLastName(reversedLastName);
-        //input.setAge(reversedAge);
         return input;
 
     }

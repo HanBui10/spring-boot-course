@@ -4,8 +4,6 @@ public class UppercaseJS {
     private String firstName;
     private String lastName;
     private int age;
-
-
     // Getters và Setters
     public String getFirstName() {
         return firstName;
@@ -31,4 +29,8 @@ public class UppercaseJS {
         this.age = age;
     }
 
+    public void convertToUppercase() {
+        this.firstName = this.firstName.toUpperCase();
+        this.lastName = this.lastName.toUpperCase();
+    }
 }
