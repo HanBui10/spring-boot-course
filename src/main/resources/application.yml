@@ -1,3 +1,10 @@
 spring:
   application:
-  name: demo
+    name: demo
+  datasource:
+    url: jdbc:mysql://localhost:3304/example_1
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
